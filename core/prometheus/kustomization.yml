@@ -6,6 +6,7 @@ resources:
   - ./ClusterRoleBinding
   - ./ConfigMap
   - ./Deployment
+  - ./Service
   - ./ServiceAccount
   - ./Namespace
 images:

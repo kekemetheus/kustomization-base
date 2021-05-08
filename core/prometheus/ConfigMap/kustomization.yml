@@ -3,4 +3,4 @@ kind: Kustomization
 configMapGenerator:
   - name: prometheus-config
     files:
-      - prometheus-config.yml
+      - prometheus.yml
