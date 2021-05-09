@@ -21,7 +21,7 @@ spec:
           - '-storage.path=/alertmanager'
           - '-web.external-url=$(EXTERNAL_URL)/alertmanager'
         ports:
-        - name: alertmanager
+        - name: http
           containerPort: 9093
         env:
         - name: EXTERNAL_URL
