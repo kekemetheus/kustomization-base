@@ -1,6 +1,8 @@
 global:
+
 templates:
   - /etc/alertmanager/*.tmpl
+
 route:
   receiver: alert-emailer
   group_by:
@@ -14,6 +16,7 @@ route:
         severity: slack
       group_wait: 10s
       repeat_interval: 1m
+
 receivers:
   - name: alert-emailer
     email_configs:
