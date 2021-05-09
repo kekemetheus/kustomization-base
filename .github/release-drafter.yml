@@ -5,20 +5,20 @@ template: |
   # What's Changed
   $CHANGES
 categories:
-  - title: '⭐ Stable Release'
-    label: '⭐ Stable Release'
+  - title: '🔥 Prometheus'
+    label: '🔥 Prometheus'
   - title: '⚡ Breaking'
     label: '⚡ Breaking'
-  - title: '🚀 Feature'
-    label: '🚀 Feature'
+  - title: '📬 Alert Manager'
+    label: '📬 Alert Manager'
+  - title: '📊 Grafana'
+    label: '📊 Grafana'
   - title: '🐛 Bug Fixes'
     label: '🐛 Bug Fixes'
-  - title: '⛩ Maintenance'
-    label: '⛩ Maintenance'
   - title: '📖 Documentation'
-    label: '📖 Docs'
-  - title: '🆙 Dependency Updates'
-    label: '🆙 Dependencies'
+    label: '📖 Documentation'
+  - title: '⭐ Stable Release'
+    label: '⭐ Stable Release'
 
 version-resolver:
   major:
@@ -30,10 +30,12 @@ version-resolver:
   patch:
     labels:
       - '🐛 Bug Fixes'
-      - '📖 Docs'
+      - '📖 Documentation'
       - '🆙 Dependencies'
       - '🚀 Feature'
-      - '⛩ Maintenance'
+      - '🔥 Prometheus'
+      - '🚀 Alert Manager'
+      - '📊 Grafana'
 
 exclude-labels:
   - '🏃 skip-changelog'
