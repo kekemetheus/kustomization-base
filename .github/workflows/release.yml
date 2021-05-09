@@ -32,3 +32,10 @@ jobs:
           repository: git-chglog/git-chglog
       - name: Update changelog
         run: git-chglog --config .github/config.yml > CHANGELOG.md
+      - name: Git Push
+        run: |
+          git add . \
+            && git commit -m 'chore(docs): Update changelogs' \
+            && git push origin master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
