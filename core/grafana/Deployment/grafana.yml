@@ -21,6 +21,8 @@ spec:
         - name: grafana
           image: grafana
           imagePullPolicy: Always
+          args:
+            - '--config=/etc/grafana/custom.ini'
           ports:
             - containerPort: 3000
               name: http
