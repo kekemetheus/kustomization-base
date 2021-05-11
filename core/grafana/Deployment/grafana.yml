@@ -53,6 +53,7 @@ spec:
             - mountPath: /etc/grafana/custom.ini
               name: grafana-config
               subPath: custom.ini
+              readOnly: true
             - mountPath: /var/lib/grafana
               name: grafana-pv
       volumes:
