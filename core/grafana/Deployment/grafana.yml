@@ -21,7 +21,7 @@ spec:
         - name: grafana
           image: grafana
           args:
-            - '-config.file=/etc/grafana/custom.ini'
+            - '--config=/etc/grafana/custom.ini'
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
@@ -50,8 +50,9 @@ spec:
               cpu: 250m
               memory: 750Mi
           volumeMounts:
-            - mountPath: /etc/grafana
+            - mountPath: /etc/grafana/custom.ini
               name: grafana-config
+              subPath: custom.ini
             - mountPath: /var/lib/grafana
               name: grafana-pv
       volumes:
