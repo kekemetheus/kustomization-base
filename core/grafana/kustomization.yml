@@ -6,7 +6,8 @@ resources:
   - ./Deployment
   - ./PersistentVolumeClaim
   - ./Service
+
 images:
   - name: grafana
     newName: grafana/grafana
-    newTag: 7.5.2
+    newTag: 7.5.6
