@@ -5,6 +5,7 @@ resources:
   - ./ConfigMap
   - ./Deployment
   - ./Service
+
 images:
   - name: alertmanager
     newName: prom/alertmanager
