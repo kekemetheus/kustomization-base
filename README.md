@@ -4,6 +4,8 @@
 
 # kustomization-base
 
+[![Test](https://github.com/kekemetheus/kustomization-base/actions/workflows/test.yml/badge.svg)](https://github.com/kekemetheus/kustomization-base/actions/workflows/test.yml)
+
 ## Demo
 
 To learn how to deploy Prometheus using ksutomization-base, please see the [kekemetheus/prometheus-to-gke](https://github.com/kekemetheus/prometheus-to-gke) guide. It demos how to deploy to GKE.
