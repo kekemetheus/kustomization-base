@@ -6,10 +6,8 @@ metadata:
 spec:
   selector: 
     app: alertmanager
-  type: NodePort  
+  type: ClusterIP  
   ports:
     - name: http
       port: 9093
-      targetPort: 9093
-
-  
+      targetPort: http
