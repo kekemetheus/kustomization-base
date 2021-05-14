@@ -1,0 +1,14 @@
+name: Test
+on: [pull_request]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: 
+        component: ['AlertManager', 'Grafana', 'Prometheus']
+    steps:
+      - uses: actions/checkout@v2
+      - name: Test Build
+        run: kustomize build core/${{ metric.component }}
