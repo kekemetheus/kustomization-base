@@ -9,7 +9,8 @@ resources:
   - ./Service
   - ./ServiceAccount
   - ./Namespace
+
 images:
   - name: prometheus
-    newName: quay.io/prometheus/prometheus
-    newTag: v2.0.0
+    newName: prom/prometheus
+    newTag: v2.27.0
