@@ -13,4 +13,4 @@ resources:
 images:
   - name: prometheus
     newName: prom/prometheus
-    newTag: v2.27.0
+    newTag: v2.27.1
