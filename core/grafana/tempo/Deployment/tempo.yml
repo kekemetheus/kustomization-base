@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: tempo
+  name: tempo
+spec:
+  selector:
+    matchLabels:
+      app: tempo
+  template:
+    metadata:
+      labels:
+        app: tempo
+    spec:
+      containers:
+        - name: tempo
+          image: tempo
+          imagePullPolicy: Always
+          args:
+            - '-config.file=/etc/tempo/tempo.yml'
+          ports:
+            - containerPort: 6831
+              name: udp
+              protocol: UDP
+          volumeMounts:
+            - mountPath: /etc/tempo/tempo.yml
+              name: tempo-config
+              subPath: tempo.yml
+              readOnly: true
+            - mountPath: /tmp/tempo/wal
+              name: wal
+            - mountPath: /tem/tempo/blocks
+              name: blocks
+      volumes:
+        - name: tempo-config
+          configMap:
+              name: tempo-config
+        - name: wal
+          emptyDir: {}
+        - name: blocks
+          emptyDir: {}
+            
+            
