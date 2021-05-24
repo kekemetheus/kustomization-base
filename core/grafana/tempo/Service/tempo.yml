@@ -5,10 +5,13 @@ metadata:
 spec:
   type: ClusterIP
   ports:
-    - name: http
+    - name: udp
       port: 6831
-      protocol: TCP
+      protocol: UDP
       targetPort: udp
+    - name: tempo
+      port: 3100
+      protocol: TCP
+      targetPort: tempo
   selector:
     app: tempo
-  sessionAffinity: None

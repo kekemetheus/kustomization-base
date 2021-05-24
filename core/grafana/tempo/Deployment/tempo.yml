@@ -23,6 +23,9 @@ spec:
             - containerPort: 6831
               name: udp
               protocol: UDP
+            - containerPort: 3100
+              name: tempo
+              protocol: TCP
           volumeMounts:
             - mountPath: /etc/tempo/tempo.yml
               name: tempo-config
