@@ -10,4 +10,4 @@ resources:
 images:
   - name: grafana
     newName: grafana/grafana
-    newTag: 7.5.7
+    newTag: 8.0.1
