@@ -4,7 +4,6 @@ namespace: monitoring
 resources:
   - ./ClusterRole
   - ./ClusterRoleBinding
-  - ./ConfigMap
   - ./Deployment
   - ./Service
   - ./ServiceAccount
