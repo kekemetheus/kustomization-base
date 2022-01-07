@@ -9,4 +9,4 @@ resources:
 images:
   - name: alertmanager
     newName: prom/alertmanager
-    newTag: v0.21.0
+    newTag: v0.23.0
