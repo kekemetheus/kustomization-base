@@ -7,7 +7,6 @@ resources:
   - ./Deployment
   - ./Service
   - ./ServiceAccount
-  - ./Namespace
 
 images:
   - name: prometheus
